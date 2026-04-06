@@ -1,6 +1,6 @@
-# Sat Apr  4 11:30:55 CST 2026
+# Mon Apr  6 14:35:05 CST 2026
 
-# The following SageMath program computes the prime discriminant factorisation of a fundamental discriminant.
+# The following Sage program computes the prime discriminant factorisation of a fundamental discriminant.
 
 def decompose_fundamental_discriminant(D):
     if not D.is_fundamental_discriminant():
@@ -28,10 +28,10 @@ def decompose_fundamental_discriminant(D):
             prime_discs.append(-p)
     return prime_discs
 
-# The output is [N, [n, i], [p_1^*, ... ,p_n^*]], where:
+# The output is [N, group_order, i] [p_1^*, ... ,p_n^*], where:
 # N is the level of the Shimura modular curve asociated with a real quadratic field of discriminant N with n distinct prime divisors, for N between minimum and maximum;
-# [n, i] is the group ID of the Atkin-Lehner group of the Shimura modular curve;
-# [p_1^*, ... ,p_n^*] is the prime discriminant decomposition of N.
+# group_order, i is the group ID of the Atkin-Lehner group of the Shimura modular curve;
+# p_1^*, ... ,p_n^* is the prime discriminant decomposition of N.
 
 n = 2
 minimum = 5
